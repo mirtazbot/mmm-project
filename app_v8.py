@@ -200,7 +200,7 @@ def plot_combined_metrics_line_chart(df, metric1, metric2, col_filter):
         plot_df_melted,
         x=DATE_COL,
         y="Value",
-        color="Metric" if not color_col else "Metric + Campaign",
+        color="Metric",
         line_group=color_col if color_col else None,
         facet_col=color_col if color_col else None,
         title=f"Daily {metric1} vs {metric2}",
